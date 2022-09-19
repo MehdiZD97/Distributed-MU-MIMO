@@ -1,32 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%	Author(s): C. Nicolas Barati nicobarati@rice.edu 
-%		Rahman Doost-Mohamamdy: doost@rice.edu
-%
-% Multiple iterations of a single-shot transmissions from one client or UE
-% to N_BS_NODE base station radios (UE stands for User Equipment).
-% The script explores Bit Error Rate (BER) as a function of Signal-to-Noise
-% Ratio (SNR) and therefore iterates over different SNR values (sim_SNR_db
-% variable). Within each iteration, only a single frame transmission takes
-% place.
-%
-% We define two modes: OTA (Over-the-air) and SIM_MOD (simulation).
-% In simulation mode we simply use a AWGN channel whereas the OTA mode
-% relies on the Iris hardware for transmission and reception.
-% In both cases the client transmits an OFDM signal that resembles a
-% typical 802.11 WLAN waveform. If the transmission is OTA, then the user
-% specifies a schedule that tells the client when to transmit its frame
-% The base station initiates the schedule by sending a beacon signal that
-% synchronizes the client. After that, the client will simply transmit its
-% frame.
-%
-%---------------------------------------------------------------------
-% Original code copyright Mango Communications, Inc.
-% Distributed under the WARP License http://warpproject.org/license
-% Copyright (c) 2018-2019, Rice University
-% RENEW OPEN SOURCE LICENSE: http://renew-wireless.org/license
-% ---------------------------------------------------------------------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clc
 clear
 close all;
